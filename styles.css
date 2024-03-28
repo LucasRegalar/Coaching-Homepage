@@ -598,7 +598,7 @@ hr {
     margin-top: 22px;
     width: 32px;
     aspect-ratio: 1;
-    background-image: url(/imgs/others/bars-solid.svg);
+    background-image: url(./imgs/others/bars-solid.svg);
     background-repeat: no-repeat;
     border: none;
     background-color: transparent;
@@ -606,7 +606,7 @@ hr {
 }
 
 .toggle-nav-btn[aria-expanded="true"] {
-    background-image: url(/imgs/others/xmark-solid.svg);
+    background-image: url(./imgs/others/xmark-solid.svg);
 }
 
 .primary-nav {
