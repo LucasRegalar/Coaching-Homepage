@@ -1,4 +1,8 @@
-<?php require ("./../views/partials/header.php") ?>
+<?php 
+$pageTitle = 'Persönliches Einzelcoaching mit Silvina Regalar - Porta Westfalica';
+$metaDescription = 'Entdecken Sie persönliches Einzelcoaching. Meistern Sie berufliche und private Herausforderungen. Verbessern Sie Ihre Lebensqualität durch individuelle Beratung in Porta Westfalica und Umgebung.';
+require ("./../views/partials/header.php") 
+?>
 
 <main>
     <section class="hero-section | padding-block-600">
@@ -16,21 +20,21 @@
             </div>
             <div class="grid-even-columns">
                 <div class="flow">
-                    <p> Das heutige Leben ist anspruchsvoll und fordert ständige Leistungsbereitschaft. Ob
-                        Herausforderungen im Beruf oder Schwierigkeiten im Privatleben - Einzelcoaching hilft Ihnen
-                        dort, wo Sie alleine nicht weiterkommen.</p>
-                    <p>Es geht um Ihre persönlichen Anliegen und Ziele. Sie definieren Ihre Wünsche und wir entwickeln
-                        gemeinsam Lösungswege. Im Einzelcoaching sortieren Sie Ihre Gedanken und gewinnen Klarheit. Neue
-                        Perspektiven helfen Ihnen in sich hineinzufühlen. Was brauchen Sie für Ihre innere Zufriedenheit
-                        und Ihr persönliches Glück?</p>
+                    <p>Das heutige Leben ist anspruchsvoll und fordert ständige Leistungsbereitschaft. Ob
+                        Herausforderungen im Beruf oder Schwierigkeiten im Privatleben - Einzelcoaching hilft
+                        Ihnen dort, wo Sie alleine nicht weiterkommen.</p>
+                    <p>Es geht um Ihre persönlichen Anliegen und Ziele. Sie definieren Ihre Wünsche und wir
+                        entwickeln gemeinsam Lösungswege. Im Einzelcoaching sortieren Sie Ihre Gedanken und
+                        gewinnen Klarheit. Neue Perspektiven helfen Ihnen in sich hineinzufühlen. Was brauchen Sie
+                        für Ihre innere Zufriedenheit und Ihr persönliches Glück?</p>
                     <p>Ich unterstütze Sie, Ihr Leben so zu gestalten, wie Sie es möchten. Ich gebe Ihnen die nötigen
                         Impulse, damit Sie den für Sie richtigen Weg erkennen.</p>
                     <p class="bold">Lernen Sie Ihre Werte kennen - verbessern Sie Ihre Lebensqualität!<br>
-                        Persönlich und individuell - ganz nach Ihren Bedürfnissen.
+                    Persönlich und individuell - ganz nach Ihren Bedürfnissen.
                     </p>
                 </div>
                 <div class="beziehungscoaching-img" style="--flow-spacer: 0em">
-                    <img class="border-radius-5px" src="/assets/imgs/imgs-high-qual/einzelcoaching_16:9.jpeg"
+                    <img class="border-radius-5px" src="/assets/imgs/imgs-high-qual/einzelcoaching_16-9.jpg"
                         alt="Silvina Regalar im Einzelcoaching">
                 </div>
             </div>

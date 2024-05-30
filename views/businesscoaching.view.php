@@ -1,4 +1,8 @@
-<?php require ("./../views/partials/header.php") ?>
+<?php
+$pageTitle = 'Erfolgreiches Businesscoaching mit Silvina Regalar - Porta Westfalica';
+$metaDescription = 'Erleben Sie professionelles Businesscoaching. Lösen Sie berufliche Konflikte, steigern Sie die Motivation und Leistungsfähigkeit Ihres Teams. Individuelle Beratung in Porta Westfalica und Umgebung für ein gesundes Arbeitsumfeld.';
+require ("./../views/partials/header.php")
+    ?>
 
 <main>
     <section class="hero-section | padding-block-600">
@@ -16,16 +20,16 @@
             </div>
             <div class="grid-even-columns">
                 <div class="flow">
-                    <p> Unser Arbeits- und Geschäftsleben stellt uns immer wieder auf's Neue vor berufliche
+                    <p>Unser Arbeits- und Geschäftsleben stellt uns immer wieder auf&#39;s Neue vor berufliche
                         Herausforderungen. Diese sind meist ganz unterschiedlich. Hinzu kommt, dass jeder Mensch
                         Situationen und Stress individuell anders empfindet.</p>
-                    <p>Situationen und Ereignisse werden aufgrund der eigenen gemachten Erfahrungen bewertet, und das
-                        kann im täglichen Miteinander zu Missverständnissen und Konflikten führen.</p>
-                    <p>Als ihr Coach helfe ich Ihrem Team Ihren Blickwinkel zu ändern. Konfliktlösung schafft neue
-                        Motivation und Leistungsfähigkeit im Team. Gemeinsam entwerfen wir Problemlösungsstrategien, um
-                        die Zufriedenheit aller Beteiligten und ein gesundes Miteinander am Arbeitsplatz
-                        wiederherzustellen.</p>
-                    <p class="bold">Einzelnd oder in der Gruppe schauen wir uns die Konflikte und deren Ursache an.<br>
+                    <p>Situationen und Ereignisse werden aufgrund der eigenen gemachten Erfahrungen bewertet,
+                        und das kann im täglichen Miteinander zu Missverständnissen und Konflikten führen.</p>
+                    <p>Als ihr Coach helfe ich Ihrem Team Ihren Blickwinkel zu ändern. Konfliktlösung schafft
+                        neue Motivation und Leistungsfähigkeit im Team. Gemeinsam entwerfen wir
+                        Problemlösungsstrategien, um die Zufriedenheit aller Beteiligten und ein gesundes
+                        Miteinander am Arbeitsplatz wiederherzustellen.</p>
+                    <p class="bold">Einzelnd oder in der Gruppe schauen wir uns die Konflikte und deren Ursache an.
                         Persönlich und individuell - ganz nach Ihren Bedürfnissen.
                     </p>
                 </div>

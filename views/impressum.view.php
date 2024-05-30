@@ -1,4 +1,8 @@
-<?php require ("./../views/partials/header.php") ?>
+<?php 
+$pageTitle = 'Impressum - Silvina Regalar, Porta Westfalica';
+$metaDescription = '"Impressum der Website von Silvina Regalar. Hier finden Sie alle rechtlichen Informationen, Verantwortliche, Haftungsausschluss und Datenschutzrichtlinien.';
+require ("./../views/partials/header.php") 
+?>
 
 <main>
     <section class="hero-section | padding-block-600">
@@ -104,6 +108,22 @@
                 Wenn Sie nicht wollen, dass Cookies auf Ihrem Computer wiedererkannt und gelesen werden, stellen Sie
                 Ihren Internet-Browser bitte so ein, dass er Cookies blockiert, löscht oder Sie warnt, bevor ein Cookie
                 gespeichert wird.</p>
+            <h3 class="fs-third-heading">Verwendung von Google reCAPTCHA v3</h3>
+            <p>Zum Schutz Ihrer Anfragen über das Internetformular verwenden wir den Dienst reCAPTCHA des Unternehmens
+                Google LLC (Google). Diese Abfrage dient der Unterscheidung, ob die Eingabe durch einen Menschen oder
+                missbräuchlich durch automatisierte, maschinelle Verarbeitung erfolgt. Die Abfrage umfasst den Versand
+                der IP-Adresse und ggf. weiterer von Google für den Dienst reCAPTCHA benötigter Daten an Google. Zu
+                diesem Zweck wird Ihre Eingabe an Google übermittelt und dort weiterverwendet. Ihre IP-Adresse wird von
+                Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des
+                Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt und dadurch anonymisiert. Nur in
+                Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort
+                gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre
+                Nutzung dieses Dienstes auszuwerten. Die im Rahmen von reCAPTCHA von Ihrem Browser übermittelte
+                IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Für diese Daten gelten die
+                abweichenden Datenschutzbestimmungen des Unternehmens Google. Weitere Informationen zu den
+                Datenschutzrichtlinien von Google finden Sie unter: <a class="link--red"
+                    href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.
+            </p>
             <h3 class="fs-third-heading">Sicherheit</h3>
             <p>Das Coachingbüro Silvina Regalar trifft organisatorische und technische Sicherheitsvorkehrungen, um Ihre
                 personenbezogenen Daten gegen unbeabsichtigte oder unrechtmäßige Änderung, Veränderung und Löschung

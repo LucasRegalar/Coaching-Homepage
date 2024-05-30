@@ -14,6 +14,7 @@ $name = $_POST["name"];
 $phone = $_POST["phone"];
 $email = $_POST["email"];
 $message = $_POST["message"];
+$datenschutz = isset($_POST["datenschutz"]);
 
 Session::flash("old", [
     "name" => $name,
@@ -23,7 +24,7 @@ Session::flash("old", [
 ]);
 
 //Validation
-if (!$form->validate($email, $name, $message)) {
+if (!$form->validate($email, $name, $message, $datenschutz)) {
     http_response_code(Responses::BadRequest->value);
     Session::flash("errors", $form->getErrors());
     redirect("/kontakt#submit-btn");
@@ -35,7 +36,6 @@ $token = $_POST["g-recaptcha-response"];
 $result = $captcha->validate(($token));
 
 if(!$result->success) {
-    // TODO Ist das doof geregelt, weil der response_code ja durch den redirect direkt gelöscht wird?
     http_response_code(Responses::Rejected->value);
     redirect("/kontakt/fehler");
 }

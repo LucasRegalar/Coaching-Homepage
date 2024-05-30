@@ -4,8 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coaching Silvina Regalar</title>
+    <title><?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : 'Life Coaching, Lebensberatung und psychologische Beratung in Porta Westfalica - Silvina Regalar' ?></title>
+    <meta name="description" content="<?php echo isset($metaDescription) ? htmlspecialchars($metaDescription) : 'Erleben Sie professionelle Lebensberatung und psychologische Beratung mit Silvina Regalar in Porta Westfalica. Entspanntes Erstgespräch bei kostenlosem Erstgespräch. Raum Bielefeld, Herford, Minden, Bad Oeynhausen, Hille, und Lübbecke.'; ?>">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-touch-icon-180x180.png">
+        <!-- Für Browser -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/favicon/favicon-32x32.ico">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/imgs/favicon/favicon-96x96.png">
+        <!-- Für Windows -->
+        <meta name="msapplication-square310x310logo" content="assets/imgs/favicon/mstile-310x310.png">
+        <meta name="msapplication-TileColor" content="[HEXFARBE (z.B. #000000)]">
+    <!-- End Favicon -->
     <script type="module" src="assets/js/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>

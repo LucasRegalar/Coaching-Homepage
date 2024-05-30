@@ -2,31 +2,19 @@
 
 namespace http\forms;
 
-//require composer autoloader
-// TODO nur composers autoloader benutzen?
-require base_path("vendor/autoload.php");
-
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 
 class Mailer
 {
 
     protected function setSettings(PHPMailer $phpmailer)
     {
-        //for more Debug Information:
-        //$mailToCostumer->SMTPDebug = SMTP::DEBUG_SERVER;
-
-        $phpmailer->isSMTP();
-
-        //SERVER SESSTINGS 
-        //when Server requires auth:
-        // $phpmailer->SMTPAuth = true;
-        $phpmailer->Host = "localhost";
-        // $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $phpmailer->Port = 1025;
-        // $phpmailer->Username = "";
-        // $phpmailer->Password ="";
+        $phpmailer->Host = $_ENV['SMTP_PORT'];
+        $phpmailer->SMTPAuth = true;
+        $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $phpmailer->Port = $_ENV['SMTP_PORT'];
+        $phpmailer->Username = $_ENV['SMTP_USERNAME'];
+        $phpmailer->Password = $_ENV['SMTP_PASSWORT'];
     }
 
 
@@ -36,7 +24,7 @@ class Mailer
 
         $this->setSettings($mail);
 
-        $mail->setFrom("noreply@silvinaregalar.com", "Coaching Server");
+        $mail->setFrom("kontakt@coaching-silvina-regalar.de", "Coaching Server");
         $mail->addAddress("kontakt@coaching-silvina-regalar.de", "Silvina Regalar");
         $mail->addReplyTo($email, $name);
 
@@ -72,7 +60,7 @@ class Mailer
 
         $this->setSettings($mail);
 
-        $mail->setFrom("noreply@silvinaregalar.com", "Silvina Regalar");
+        $mail->setFrom("kontakt@coaching-silvina-regalar.de", "Silvina Regalar");
         $mail->addAddress($email, $name);
         $mail->addReplyTo("kontakt@coaching-silvina-regalar.de", "Silvina Regalar");
 
@@ -89,7 +77,7 @@ class Mailer
     {
 
         return "
-        <p>Sehr geehrte/r $name,</p>
+        <p>Liebe/r $name,</p>
         <br/> 
         <p>Vielen Dank für Ihre Nachricht.</p>
         <p>Ich habe Ihre Anfrage erhalten und werde mich in Kürze bei Ihnen melden.</p>
@@ -100,6 +88,7 @@ class Mailer
         <p>Email: kontakt@coaching-silvina-regalar.de</p>
         <p>Telefonnummer: 0571 7797756</p>
         <a href='https://www.coaching-silvina-regalar.de/'>www.coaching-silvina-regalar.de</a>
+        <p>Für weitere Informationen zu unseren Allgemeinen Geschäftsbedingungen klicken Sie bitte <a href='https://www.coaching-silvina-regalar.de//impressum'>hier</a>.</p>
         <br/> 
         <hr/> 
         <br/> 
